@@ -24,7 +24,7 @@ idInfo(idNumber,basePath)
         默认为：'idinfo/regionalismCode/regionalismCode_'
 ```
 
-:no_good: 不要改动行政区划代码信息文件名中的数字，并将此数字作为文件名结尾 （ 如 `regionlismCode_2019` 中的 `2019`），
+:no_good: 不要改动行政区划代码信息文件名中的数字。需要将此数字作为文件名结尾 （ 如 `regionlismCode_2019` 中的 `2019`），
 #### :smile: 获取区域信息
 
 :point_right: 获取省（直辖市、特别行政区）名称
@@ -70,6 +70,7 @@ idInfo('350104############').getCounty()
 ```
 
 返回对应身份证号码匹配的年龄 `int`
+
 **eg:**
 ```python
 idInfo('35010419860321####').getCounty()
@@ -82,6 +83,7 @@ idInfo('35010419860321####').getCounty()
 ```
 
 返回对应身份证号码匹配的性别 `str`
+
 **eg:**
 ```python
 idInfo('350104198603210047').getSex()
@@ -94,6 +96,7 @@ idInfo('350104198603210047').getSex()
 ```
 
 返回对应身份证号码匹配的生日 `str`
+
 **eg:**
 ```python
 idInfo('350104198603210047').getSex()
@@ -106,6 +109,7 @@ idInfo('350104198603210047').getSex()
 ```
 
 检查对应身份证号码是否合法 `int`，返回 0 代表不合法，1 代表合法
+
 **eg:**
 ```python
 idInfo('350104198603210047').isLegal()
