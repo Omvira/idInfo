@@ -19,7 +19,7 @@
 ``` python 
 from  idInfo import idInfo
 idInfo(idNumber,basePath)
-@params idNumber str: 省份证号码
+@params idNumber str: 身份证号码
 @params basePath（可选） str: 地区代码文件共有地址，
         默认为：'idinfo/regionalismCode/regionalismCode_'
 ```
@@ -48,7 +48,7 @@ idInfo('35################').getProvince()
 
 **eg:**
 ```python
-idInfo('3501##############').getProvince()
+idInfo('3501##############').getCity()
 # 福州市
 ```
 
@@ -73,7 +73,7 @@ idInfo('350104############').getCounty()
 
 **eg:**
 ```python
-idInfo('35010419860321####').getCounty()
+idInfo('35010419860321####').getAge()
 # 35
 ```
 
@@ -99,7 +99,7 @@ idInfo('350104198603210047').getSex()
 
 **eg:**
 ```python
-idInfo('350104198603210047').getSex()
+idInfo('350104198603210047').getBirthDay()
 # 19860321
 ```
 
